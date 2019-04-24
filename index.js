@@ -18,17 +18,18 @@ import {anwsers} from './src/moya/excercise-answer';
  * Question asked by Maurizio Casalino in the group: JavaScript on facebook.
  */
 
-//--------------------------------------------------------
+/*
+----------------------------------------------------
+To write your own answers change showCorrectAnswer to false
+showCorrectAnswer = false
+----------------------------------------------------
+*/
+
 const showCorrectAnswer = true;
-
 if(showCorrectAnswer){
-var actors = anwsers.getActors();
-var getActorByName = anwsers.getActorByName;
-var getAverageAge = anwsers.getAverageAge;
-
-console.log("----------------------------------------------------------------");
-anwsers.logExerciseData();
-console.log("----------------------------------------------------------------");
+  console.log("----------------------------------------------------------------");
+  anwsers.logExerciseData();
+  console.log("----------------------------------------------------------------");
 }
 
 /*

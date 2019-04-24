@@ -95,29 +95,48 @@ function getAverageAge() {
 }
 
 function logExerciseData() {
+  /**
+   * Setup Global variables so that test would run
+   */
+  window.actors = getActors();
+  window.getActorByName = getActorByName;
+  window.getAverageAge = getAverageAge;
+
   let leo = getActorByName('Leonardo DiCaprio');
   let jlaw = getActorByName('Jennifer Lawrence');
   let jcho = getActorByName('John Cho');
   let meryl = getActorByName('Meryl Streep');
 
+  console.log('-----Array list of all actors-----------------------------------');
+  printActorObject();
+  console.log('----------------------------------------------------------------');
+  console.log('----------------------------------------------------------------');
+  console.log('----------------------------------------------------------------');
 
-console.log('-----Array list of all actors-----------------------------------\n');
-printActorObject();
-console.log('----------------------------------------------------------------');
-console.log("----------------------------------------------------------------");
-console.log("----------------------------------------------------------------");
-
+  console.log('-----Show individual actors-----------------------------------');
+  console.log('----------------------------------------------------------------');
   console.log(leo);
   console.log(jlaw);
   console.log(jcho);
   console.log(meryl);
-  console.log(jlaw.hasMoreOscarsThan(jcho));
-  console.log(jlaw.hasMoreOscarsThan(meryl));
-  console.log(leo.hasMoreOscarsThan(jlaw));
+  console.log('----------------------------------------------------------------');
+  console.log('-----has More Oscars Than---------------------------------------');
+  console.log('----------------------------------------------------------------');
 
+  console.log('jlaw.hasMoreOscarsThan(jcho)  ',  jlaw.hasMoreOscarsThan(jcho));
+  console.log('jlaw.hasMoreOscarsThan(meryl)  ', jlaw.hasMoreOscarsThan(meryl));
+  console.log('leo.hasMoreOscarsThan(jlaw)  ',   leo.hasMoreOscarsThan(jlaw));
+
+  console.log('----------------------------------------------------------------');
+  console.log('-----Actor sayss hello------------------------------------------');
+  console.log('----------------------------------------------------------------');
   console.log(meryl.hello());
   console.log(leo.hello());
-  console.log(getAverageAge());
+
+console.log('----------------------------------------------------------------');
+console.log('-----Average Age of actors -------------------------------------');
+console.log('----------------------------------------------------------------');
+console.log(getAverageAge());
 
 
 }
