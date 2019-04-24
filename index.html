@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lobipanel/1.0.3/css/lobipanel.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      	<link type="text/css" rel="stylesheet" href="https://unpkg.com/jasmine-core@latest/lib/jasmine-core/jasmine.css">
+
+   </head>
+   <body>
+      <div class="container">
+         <div class='row'>
+            <div class="col-md-5">
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <h2>Javascript Excercise</h2>
+                  </div>
+                  <div class="panel-body">
+                     <!-- Accordion item 1 -->
+                     <div id="accordion" class="accordion" style="padding-top:10px;">
+                        <div class="card mb-0">
+                           <div class="accordionInner">
+                              <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
+                                 <a class="card-title">
+                                 Famous actors excercise details
+                                 </a>
+                              </div>
+                              <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
+                                 <p>
+                                 <hr/>
+                                 Create a variable named actors and assign to it an array of five objects, each of which represents a famous actor.
+                                 <p>
+                                 <hr/>
+                                 <p>
+                                    Each actor object should have properties for: the actor's name, the actor's age, and the number of Oscars the actor has received
+                                    (you can call this property oscars or numOscars).
+                                 </p>
+                                 <p></p>
+                                 <p> These are the actors to use:</p>
+                                 <p> Leonardo DiCaprio (age 41, 1 Oscar)</p>
+                                 <p> Jennifer Lawrence (age 25, 1 Oscar)</p>
+                                 <p> Samuel L. Jackson (age 67, no Oscars)</p>
+                                 <p> Meryl Streep (age 66, 3 Oscars)</p>
+                                 <p> John Cho (age 43, no Oscars)</p>
+                                 <p></p>
+                                 <p></p>
+                                 <hr/>
+                                 <p> In addition to the three properties already mentioned, each actor object should have the following two
+                                    methods: 1. hello 2. hasMoreOscarsThan
+                                 </p>
+                                 <p>hello - this method logs to the console the string &quot;Hello, my name is &quot; followed by the actor's
+                                    name.
+                                 </p>
+                                 <p>hasMoreOscarsThan - this method accepts one actor object as a parameter and returns true if the actor has
+                                    more Oscars than the one that is passed as a parameter and false otherwise.
+                                 </p>
+                                 <p>Now write the following functions: getActorByName , getAverageAge</p>
+                                 <p>getActorByName - this function expects a string as a parameter and returns the object in the actors array
+                                    whose name property is equal to the string that is passed in (if there is one).
+                                 </p>
+                                 <p>getAverageAge - this function returns the average age of all the actors in the array.</p>
+                                 <p>using the console verify the output below.</p>
+                                 <hr/>
+                                 <p>var leo = getActorByName('Leonardo DiCaprio');</p>
+                                 <p>var jlaw = getActorByName('Jennifer Lawrence');</p>
+                                 <p>var jcho = getActorByName('John Cho');</p>
+                                 <p>var meryl = getActorByName('Meryl Streep');</p>
+                                 <p>jlaw.hasMoreOscarsThan(jcho);</p>
+                                 <p>jlaw.hasMoreOscarsThan(meryl);</p>
+                                 <p>leo.hasMoreOscarsThan(jlaw);</p>
+                                 <p>meryl.hello();</p>
+                                 <p>leo.hello();</p>
+                                 <p>getAverageAge(); </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-1"></div>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lobipanel/1.0.3/js/lobipanel.min.js"></script>
+      <script>
+         $(function () {
+             $('.panel').lobiPanel({
+                   reload: false,
+                   editTitle:false,
+                   minimize: false,
+                   unpin:false,
+                   //sortable: true,
+                   resize: 'vertical',
+                   minHeight: 200,
+                   maxHeight: 700,
+                   //bodyHeight: '250px',
+                   close:false,
+                   expand: {
+                       icon: 'fa fa-expand colorwhite',
+                       icon2: 'fa fa-compress colorwhite'
+                   },
+               });
+             });
+      </script>
+   </body>
+</html>

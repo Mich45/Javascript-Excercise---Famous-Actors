@@ -1,0 +1,43 @@
+h1, h2 {
+  font-family: Lato;
+}
+h1, h2 {
+  font-family: Lato;
+}
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f106";
+	font-size:14px;
+    float: right; 
+	position: relative;
+	display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f107"; 
+	font-size:14px;
+	display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.accordionInner {
+        background: #FAFAFC !important;
+        border: 1px solid !important;
+        border-color: #ddd !important;
+        border-left: 3px solid orange !important;
+    }
+	.card-header,.card-body  {
+		padding : 10px;	
+		color: #757575 !important;
+	}
+	.card-title{
+		color: #757575 !important;
+	}
+	
+.panel .dropdown{
+	position: absolute;
+    margin-top: -50px;
+    right: 10px;
+}
