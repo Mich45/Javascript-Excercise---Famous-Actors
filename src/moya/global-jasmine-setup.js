@@ -16,5 +16,3 @@ export function jasMineBootstrap () {
     window['jasmineRef'] = jasmine.getEnv();
   }
 }
-
-//import '../jasmine.spec';
